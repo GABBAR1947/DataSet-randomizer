@@ -10,6 +10,9 @@ Data = open('PascalDataTest.txt','r+');
 Result = open('results.txt','w');
 num_lines = sum(1 for line in open('PascalDataTest.txt'));
 
+#with Data as f:
+#    Out = f.readlines()
+
 Out = Data.read().splitlines();
 
 #Result.write(Out[0]);
